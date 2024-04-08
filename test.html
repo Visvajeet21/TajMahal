@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Gallery Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #gallery {
+            display: none;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="toggleGallery()">Open Gallery</button>
+
+    <div id="gallery">
+        <img src="taj.jpg" alt="Image 1">
+        <img src="taj2.jpg" alt="Image 2">
+        <img src="download.jpeg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+
+    <script>
+        function toggleGallery() {
+            var gallery = document.getElementById('gallery');
+            if (gallery) {
+                gallery.style.display = (gallery.style.display === 'none' || gallery.style.display === '') ? 'block' : 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Mahal Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          background-image: url('taj2.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;/*used to display img in background*/
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for better readability */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .translucent-section {
+            background-color: rgba(255, 255, 255, 0.489); 
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            max-width: 1500px; /* Adjust the width as needed */
+            margin: auto;
+        }
+
+        h1 {
+            color: #333; /* Text color inside the translucent section */
+        }
+        #gallery {
+            display: none;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        #hiddenSection {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.489);;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        </style>
+   
+</head>
+<body>
+  
+
+    <header >
+        <center><h1 style="font-family:verdana;" ><b>THE MONUMENT OF LOVE</b></h1></center>
+       
+    </header>
+    <hr>
+    <main>
+        <center>  <div class="button-container">
+            <button onclick="navigateToPage()">BOOKING</button>
+            <button onclick="navigate_ToPage()">LOCATIONS</button>
+            <button onclick="toggleSection()">CONTACT US</button>
+            <button onclick="toggleGallery()">GALLERY</button>
+          </div></center>
+
+          <div id="hiddenSection">
+            <h2>Contact Us </h2>
+            <p>Mobile:1234567890</p>
+        </div>
+          <div id="gallery">
+            <img src="taj.jpg" alt="Image 1">
+            <img src="taj2.jpg" alt="Image 2">
+            <img src="pana.jpg" alt="Image 3">
+            <!-- add more images if required -->
+        </div>
+          <hr>
+          <div class="translucent-section">
+          <center><section id="overview"></center>
+            <h2>Overview</h2>
+            <p><b>T</b>he Taj Mahal, a timeless symbol of love and architectural brilliance, stands majestically on the banks of the Yamuna River in Agra, India. Commissioned by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, the Taj Mahal is a marvel that transcends the boundaries of time and captivates the hearts of millions.
+
+                Completed in 1653, the Taj Mahal is renowned for its breathtaking beauty and has earned its place as one of the Seven Wonders of the World. The monument's allure lies not only in its stunning architecture but also in the profound love story that inspired its creation.</p>
+        </section></div>
+        <hr>
+        <div class="translucent-section"> <center><section id="architecture"></section></center>
+            <h2>Architecture</h2>
+            <p>The architecture of the Taj Mahal is a testament to the Mughal dynasty's unparalleled craftsmanship and artistic finesse. Designed by the architect Ustad Ahmad Lahori, the monument seamlessly blends Persian, Ottoman, Indian, and Islamic architectural styles. The central focus is the white marble mausoleum, a masterpiece of symmetry and precision.
+
+                The main dome, crowned by a golden finial, stands as the pinnacle of the Taj Mahal's grandeur. Four minarets, elegantly positioned at each corner of the plinth, add to the symmetry and serve both aesthetic and structural purposes. The intricate marble inlay work, featuring delicate floral patterns and calligraphy from the Quran, showcases the artisans' unparalleled skill.
+                
+                The charbagh, a Persian-style garden, surrounds the mausoleum, further enhancing the overall harmony of the architectural design. The reflection pools on either side of the central pathway create a mesmerizing mirror image, adding a touch of ethereal beauty to the monument.</p>
+        </section></div>
+        <hr>
+
+        <div class="translucent-section">  <center><section id="history"></section></center> 
+            <h2>History</h2>
+            <p>The history of the Taj Mahal is steeped in romance and tragedy. Emperor Shah Jahan, grief-stricken by the death of his favorite wife Mumtaz Mahal during childbirth, vowed to build a monument that would immortalize their love. The construction of the Taj Mahal began in 1632 and took over 20 years to complete.
+
+                The Taj Mahal was more than just a mausoleum; it was a grand expression of Shah Jahan's love and a symbol of eternal devotion. The emperor spared no expense, employing artisans and craftsmen from across the empire to create a structure that would stand the test of time.
+                
+                Today, the Taj Mahal stands as a testament to the enduring power of love and the genius of Mughal architecture. Recognized as a UNESCO World Heritage Site, it continues to draw millions of visitors from around the world who come to witness its unparalleled beauty and immerse themselves in the romantic tale that gave birth to this architectural marvel.</p>
+        </section></div>
+        <hr>
+        <div class="translucent-section">  <center><section id="travel package"></section></center>
+            <h2>Travel Package</h2>
+
+**Unveil the Beauty of India with Our Taj Mahal Tour Package!**
+
+Embark on a journey to witness the epitome of love and architectural marvel – the Taj Mahal. Our exclusive Taj Mahal Tour Package promises an enchanting experience that transcends time and culture.
+
+**What We Offer:**
+- **Guided Tours:** Immerse yourself in the rich history and stories behind the Taj Mahal with our knowledgeable and friendly guides.
+  
+- **Luxurious Accommodations:** Experience comfort and elegance in our carefully selected hotels, providing the perfect retreat after a day of exploration.
+
+- **Cultural Experiences:** Beyond the Taj Mahal, discover the vibrant culture, local cuisine, and traditions of India.
+
+- **Seamless Travel:** Enjoy a hassle-free journey with our comprehensive travel arrangements, including transportation and itinerary planning.
+
+**Why Choose Us:**
+- **Expertise:** With years of experience, we ensure a seamless and unforgettable travel experience.
+
+- **Tailored Packages:** Our customizable packages cater to diverse preferences and budgets.
+
+- **Customer Satisfaction:** Your satisfaction is our priority, and we strive to create memories that last a lifetime.
+
+**Book Now and Let the Taj Mahal Unfold Its Stories Just for You!**
+
+<b>Contact us at 1234567890 or visit our website wahtaj.com to book your Taj Mahal Tour today.</b>
+
+*Discover the Magic, Experience the Majesty, and Create Memories with <b>THE MONUMENT OF LOVE</b>  - Your Gateway to the Taj Mahal!*</section></div>
+<hr>
+        <button id="learn-more-button">Learn More</button>
+
+        <div id="additional-info" style="display: none;">
+            <h2>Additional Information</h2>
+            <ul><li><b> <div class="translucent-section">  Contact Us :wahtaj.com</b> </div></li> 
+                <hr>
+               <li><b><div class="translucent-section">Mobile:123467890</b></div></li>
+               <hr> 
+               <li><b><div class="translucent-section">Address:AGRA,INDIA</b></div></li> 
+            </ul>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p><b>&copy; 2023 Taj Mahal Information</b></p>
+    </footer>
+
+    <script src="tajmahal.js"></script>
+    <script>function toggleGallery() {
+        var gallery = document.getElementById('gallery');
+        if (gallery) {
+            gallery.style.display = (gallery.style.display === 'none' || gallery.style.display === '') ? 'block' : 'none';
+        }// used to toggle the gallery section
+    }</script>
+
+<script>
+    function navigateToPage() {
+        window.location.href = 'form.html';
+    }//used to navigate to another file
+</script>
+
+<script>
+    function toggleSection() {
+        var section = document.getElementById('hiddenSection');
+        if (section) {
+            section.style.display = (section.style.display === 'none' || section.style.display === '') ? 'block' : 'none';
+        }// used to toggle the contact section
+    }
+</script>
+
+<script>
+    function navigate_ToPage() {
+        window.location.href = 'locate.html';
+    }
+</script><!--Used to navigate to locate-->
+
+
+
+</body>
+</html>

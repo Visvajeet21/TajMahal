@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours and Travel Inquiry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottpxom: 8px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+         .alert {
+            width: 100%;
+            background: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 900;
+            display: none;
+
+        }
+    </style>
+</head>
+<body >
+
+    <h1>Contact Us for Your Dream Vacation at Taj Mahal</h1>
+    <button onclick="navigateToPage()">HOME</button>
+    <hr>
+    <form action="" id="tajmahal">
+        <div class="alert">Message Sent !</div>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <fieldset>
+            <legend>Payment Options</legend>
+
+            <input type="radio" id="creditCard" name="payment" value="creditCard" checked>
+            <label for="creditCard">Credit Card</label>
+
+            <input type="radio" id="UPI" name="payment" value="UPI">
+            <label for="UPI">UPI</label>
+        </fieldset>
+
+        <label for="message">Additional Information:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+    </form>
+
+    <script>
+        function navigateToPage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <script src="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWdDWllOOWpvbVZ3eU1LYVJFc2hXcFZEZ0pIUXxBQ3Jtc0tuRHFFSVJSWDJ6M3hFSGJfbTJqamxnbl81VjEtZDc4NExDWlV0MmhHSDRBdU5RVzB6Q3MzczRmUVZ0ZFdSWnlTcGtDLXlrdmRscnd5eGRZU0E4dVppbjEyS21mclA0SmdRaHBKQzRNbkRyNllqYl9kZw&q=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ffirebase%2F7.14.1-0%2Ffirebase.js&v=RAWHXRTKTHw"></script>
+    <script src='./mail.js'></script>
+</body>
+</html>
